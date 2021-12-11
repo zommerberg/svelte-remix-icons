@@ -36,8 +36,8 @@ export default config;
   import RemixIcon from 'svelte-remix-icons/RemixIcon.svelte'
 </script>
 
-<!-- use solid attribute to control whether to show solid or outline version of icon -->
-<Icon src="{ArrowRight}" solid />
+<!-- use filled attribute to control whether to show filled or outline version of icon -->
+<Icon src="{ArrowRight}" filled />
 
 <!-- use size attribute to set icon size (32 -> 32px | 2rem | 100% == default ) -->
 <Icon src="{ArrowRight}" size="32" />
