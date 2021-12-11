@@ -1,38 +1,47 @@
-# create-svelte
+# Description
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
+This is a sveltekit icon library based on remixIcons. Highly inspired by svelte-hero-icons
 
-## Creating a project
+- complete remixions set optimized for svelte
+- programatically change filled or line version based on the filled attribute
+- fully typed for a great IDE experience
+- works with SvelteKit & Vite
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Configuration
 
-```bash
-# create a new project in the current directory
-npm init svelte@next
-
-# create a new project in my-app
-npm init svelte@next my-app
+```
+const config = {
+  // other vite-plugin-svelte config
+  kit: {
+    // other svelte-kit config
+    vite: {
+      // other vite config
+      optimizeDeps: {
+        include: ["svelte-remix-icons"],
+      },
+    },
+  },
+};
+export default config;
 ```
 
-> Note: the `@next` is temporary
+## Usage
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
+<script>
+  // Only import what you need!
+  import { ArrowRight } from 'svelte-remix-icons'
 
-## Building
+  // For now you have to import the icon component like this:
+  import RemixIcon from 'svelte-remix-icons/RemixIcon.svelte'
+</script>
 
-Before creating a production version of your app, install an [adapter](https://kit.svelte.dev/docs#adapters) for your target environment. Then:
+<!-- use solid attribute to control whether to show solid or outline version of icon -->
+<Icon src="{ArrowRight}" solid />
 
-```bash
-npm run build
+<!-- use size attribute to set icon size (32 -> 32px | 2rem | 100% == default ) -->
+<Icon src="{ArrowRight}" size="32" />
+
+<!-- use Windi CSS or tailwindcss classes directly -->
+<Icon src="{ArrowRight}" class="w-6 h-6 text-red-500" />
 ```
-
-> You can preview the built app with `npm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.

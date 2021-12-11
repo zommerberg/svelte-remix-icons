@@ -5,6 +5,16 @@
 	let customClass = '';
 	export { customClass as class };
 	export let ariaHidden = false;
+
+	if (size !== '100%') {
+		if (size.slice(-1) != 'x' && size.slice(-1) != 'm' && size.slice(-1) != '%') {
+			try {
+				size = parseInt(size) + 'px';
+			} catch (error) {
+				size = '100%';
+			}
+		}
+	}
 </script>
 
 <svg
