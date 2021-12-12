@@ -41,11 +41,11 @@ export default config;
 </script>
 
 <!-- use filled attribute to control whether to show filled or outline version of icon -->
-<Icon src="{ArrowRight}" filled />
+<RemixIcon src="{ArrowRight}" filled />
 
 <!-- use size attribute to set icon size (32 -> 32px | 2rem | 100% == default ) -->
-<Icon src="{ArrowRight}" size="32" />
+<RemixIcon src="{ArrowRight}" size="32" />
 
 <!-- use Windi CSS or tailwindcss classes directly -->
-<Icon src="{ArrowRight}" class="w-6 h-6 text-red-500" />
+<RemixIcon src="{ArrowRight}" class="w-6 h-6 text-red-500" />
 ```
