@@ -1,4 +1,8 @@
-# Description
+# Installation
+
+`npm i svelte-remix-icons`
+
+## Description
 
 This is a sveltekit icon library based on remixIcons. Highly inspired by svelte-hero-icons
 
