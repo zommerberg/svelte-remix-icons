@@ -1,10 +1,11 @@
 {
   "name": "svelte-remix-icons",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "repository": {
     "type": "git",
     "url": "https://github.com/zommerberg/svelte-remix-icons"
   },
+  "license": "Apache 2.0",
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",

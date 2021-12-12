@@ -1,6 +1,6 @@
 # Installation
 
-`npm i svelte-remix-icons`
+```npm i svelte-remix-icons```
 
 ## Description
 
@@ -34,18 +34,18 @@ export default config;
 ```
 <script>
   // Only import what you need!
-  import { ArrowRight } from 'svelte-remix-icons'
+  import { Building4 } from 'svelte-remix-icons'
 
   // For now you have to import the icon component like this:
   import RemixIcon from 'svelte-remix-icons/RemixIcon.svelte'
 </script>
 
 <!-- use filled attribute to control whether to show filled or outline version of icon -->
-<RemixIcon src="{ArrowRight}" filled />
+<RemixIcon src="{Building4}" filled />
 
 <!-- use size attribute to set icon size (32 -> 32px | 2rem | 100% == default ) -->
-<RemixIcon src="{ArrowRight}" size="32" />
+<RemixIcon src="{Building4}" size="32" />
 
 <!-- use Windi CSS or tailwindcss classes directly -->
-<RemixIcon src="{ArrowRight}" class="w-6 h-6 text-red-500" />
+<RemixIcon src="{Building4}" class="w-6 h-6 text-red-500" />
 ```
