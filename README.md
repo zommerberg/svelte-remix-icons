@@ -1,12 +1,15 @@
 # Installation
 
 ```
+
 npm i svelte-remix-icons
+
 ```
 
 ## Description
 
-This is a sveltekit icon library based on remixIcons. Highly inspired by svelte-hero-icons
+This is a sveltekit icon library based on [remixIcons](https://remixicon.com/).
+Highly inspired by [svelte-hero-icons](https://github.com/JustinVoitel/svelte-hero-icons)
 
 - complete remixions set optimized for svelte
 - programatically change filled or line version based on the filled attribute
@@ -15,6 +18,9 @@ This is a sveltekit icon library based on remixIcons. Highly inspired by svelte-
 
 ## Configuration
 
+- install as dependency (important)
+- Add this to your vite.config.js, so all icons are bundled into one file -> no import waterfalls
+
 ```
 const config = {
   // other vite-plugin-svelte config
@@ -22,6 +28,9 @@ const config = {
     // other svelte-kit config
     vite: {
       // other vite config
+      ssr: {
+        noExternal: ['svelte-hero-icons']
+      },
       optimizeDeps: {
         include: ["svelte-remix-icons"],
       },
@@ -51,3 +60,7 @@ export default config;
 <!-- use Windi CSS or tailwindcss classes directly -->
 <RemixIcon src="{Building4}" class="w-6 h-6 text-red-500" />
 ```
+
+## Author
+
+This package is based on [remixIcons](https://remixicon.com/)
