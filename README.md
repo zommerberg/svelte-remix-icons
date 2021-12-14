@@ -1,6 +1,8 @@
 # Installation
 
-```npm i svelte-remix-icons```
+```
+npm i svelte-remix-icons
+```
 
 ## Description
 
